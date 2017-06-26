@@ -1,0 +1,28 @@
+FCB1010_CHANNEL = 0
+
+TRACK_TOGGLE_CCS = [0,1,2,3,4,5,6]
+SCENE_DOWN_CC = 9
+SCENE_UP_CC = 8
+SCENE_PLAY_CC = 7
+
+RECORD_CLIP_CCS = [ i * 10 + 5 for i in range(1,10)]
+TOGGLE_CLIP_CCS = [ i * 10 + 6 for i in range(1,10)]
+RECORD_EMPTY_CLIP_CCS = [ i * 10 + 7 for i in range(1,10)]
+MASTER_PEDALA_CC = 101
+MASTER_PEDALB_CC = 111
+PEDAL_A_CCS = [ 101 + i for i in range(1,10)]
+PEDAL_B_CCS = [ 111 + i for i in range(1,10)]
+
+CHAIN_SELECT_CCS = [ i * 10 for i in range(1,10)]
+
+# MIDI STUFF
+STATUS_MASK = 0xF0
+CHAN_MASK =  0x0F
+
+CC_STATUS =  0xb0
+NOTEON_STATUS = 0x90
+NOTEOFF_STATUS = 0x80
+
+STATUS_ON =  0x7f
+STATUS_OFF = 0x00
+STATUS_OFF2 = 0x40
